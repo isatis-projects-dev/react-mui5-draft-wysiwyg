@@ -35,7 +35,7 @@ function ButtonControl({
                             horizontal: 'left',
                         }}
                         classes={{ badge: classes.badge }}
-                        overlap="circle"
+                        overlap="circular"
                         badgeContent=" "
                         invisible={badgeColor === null}
                         variant="dot">
