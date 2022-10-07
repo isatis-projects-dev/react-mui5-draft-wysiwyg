@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Editor, EditorState, RichUtils } from 'draft-js';
 import EditorFactories from './utils/EditorFactories';
 import EditorToolbar from './EditorToolbar';
-import Paper from '@mui/material/Paper';
 import { defaultConfig } from './types/config';
 import Translator from './lang/Translator';
 import { makeStyles } from 'tss-react/mui';
@@ -132,7 +131,7 @@ function MUIEditor({
     );
 
     return (
-        <>
+        <React.Fragment>
         <GlobalStyles
             styles={{
                 '.mui-editor-left-aligned-block': {
@@ -183,7 +182,7 @@ function MUIEditor({
             {EditorWrapper}
             {bottom}
         </EditorContext.Provider>
-        </>
+        </React.Fragment>
     );
 }
 
