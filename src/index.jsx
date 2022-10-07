@@ -31,7 +31,7 @@ export const MUIEditorState = {
     },
 };
 
-const useStyles = makeStyles()(() => {
+const useStyles = makeStyles()((theme) => {
   return {
     editorWrapper: {
         marginTop: theme.spacing(2),
@@ -112,10 +112,6 @@ function MUIEditor({
     };
 
     const editorWrapperElement = editorFactories.getConfigItem('editor', 'wrapperElement');
-
-    if (editorWrapperElement === Paper) {
-        editorWrapperProps.elevation = 3;
-    }
 
     const EditorWrapper = React.createElement(
         editorWrapperElement,

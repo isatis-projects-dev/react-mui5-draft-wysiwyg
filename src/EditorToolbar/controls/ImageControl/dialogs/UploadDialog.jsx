@@ -11,7 +11,7 @@ import SizeInputs from './inputs/SizeInputs';
 import ImageToUpload from './image/ImageToUpload';
 import { makeStyles } from 'tss-react/mui';
 
-const useStyles = makeStyles()(() => {
+const useStyles = makeStyles()((theme) => {
   return {
     dropArea: ({ highlightDropArea }) => ({
         width: 500,

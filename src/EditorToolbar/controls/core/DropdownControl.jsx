@@ -6,7 +6,7 @@ import { makeStyles } from 'tss-react/mui';
 import useEditor from '../../../hooks/useEditor';
 import { translateLiteralWithPrefix } from '../../../utils/translateUtils';
 
-const useStyles = makeStyles()(() => {
+const useStyles = makeStyles()((theme) => {
   return {
     selectControl: {
         margin: theme.spacing(1),

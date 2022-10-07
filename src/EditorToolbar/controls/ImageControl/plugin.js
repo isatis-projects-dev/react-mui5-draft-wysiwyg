@@ -41,7 +41,7 @@ EditorMedia.propTypes = {
     block: PropTypes.object.isRequired,
 };
 
-const useStyles = makeStyles()(() => {
+const useStyles = makeStyles()((theme) => {
   return {
     imgInfo: {
         padding: theme.spacing(0.6),
