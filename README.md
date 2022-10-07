@@ -1,6 +1,6 @@
-# react-mui-draft-wysiwyg
+# react-mui5-draft-wysiwyg
 
-> React component that allows to use a rich editor based on Material UI and Draft-js
+> React component that allows to use a rich editor based on Material UI and Draft-js updated to MUI 5 and React 18
 
 
 [![NPM](https://img.shields.io/npm/v/react-mui-draft-wysiwyg.svg)](https://www.npmjs.com/package/react-mui-draft-wysiwyg) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
@@ -18,18 +18,14 @@ Then install the editor:
 
 With npm:
 ```bash
-npm install --save @material-ui/icons draft-js react-mui-draft-wysiwyg
-```
-Or with yarn:
-```bash
-yarn add @material-ui/icons draft-js react-mui-draft-wysiwyg
+npm install --save draft-js git+https://github.com/bcdoriana/react-mui5-draft-wysiwyg.git
 ```
 
 ## Usage
 
 ```jsx
 import React from 'react'
-import MUIEditor, { MUIEditorState } from 'react-mui-draft-wysiwyg'
+import MUIEditor, { MUIEditorState } from 'react-mui5-draft-wysiwyg'
 
 function Example() {
   const [editorState, setEditorState] = React.useState(MUIEditorState.createEmpty());

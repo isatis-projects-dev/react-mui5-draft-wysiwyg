@@ -8,10 +8,10 @@
     "dumpEventTime": "2020-08-26T23:24:00Z",
     "dumpEventTimeStamp": "1598477040613",
     "processId": 8204,
-    "cwd": "D:\\Documents\\React Projects\\components\\react-mui-draft-wysiwyg\\example",
+    "cwd": "D:\\Documents\\React Projects\\components\\react-mui5-draft-wysiwyg\\example",
     "commandLine": [
       "C:\\Program Files\\nodejs\\node.exe",
-      "D:\\Documents\\React Projects\\components\\react-mui-draft-wysiwyg\\node_modules\\react-scripts\\scripts\\start.js"
+      "D:\\Documents\\React Projects\\components\\react-mui5-draft-wysiwyg\\node_modules\\react-scripts\\scripts\\start.js"
     ],
     "nodejsVersion": "v12.15.0",
     "wordSize": 64,
@@ -362,7 +362,7 @@
   ],
   "environmentVariables": {
     "=C:": "C:\\",
-    "=D:": "D:\\Documents\\React Projects\\components\\react-mui-draft-wysiwyg\\example",
+    "=D:": "D:\\Documents\\React Projects\\components\\react-mui5-draft-wysiwyg\\example",
     "ALLUSERSPROFILE": "C:\\ProgramData",
     "ANDROID_SDK_HOME": "C:\\Android",
     "APPDATA": "C:\\Users\\Ruben\\AppData\\Roaming",
@@ -378,7 +378,7 @@
     "HOMEDRIVE": "C:",
     "HOMEPATH": "\\Users\\Ruben",
     "IDEA_INITIAL_DIRECTORY": "C:\\Program Files\\JetBrains\\WebStorm 2019.3.3\\jbr\\bin",
-    "INIT_CWD": "D:\\Documents\\React Projects\\components\\react-mui-draft-wysiwyg\\example",
+    "INIT_CWD": "D:\\Documents\\React Projects\\components\\react-mui5-draft-wysiwyg\\example",
     "JD2_HOME": "C:\\Users\\Ruben\\AppData\\Local\\JDownloader 2.0",
     "LOCALAPPDATA": "C:\\Users\\Ruben\\AppData\\Local",
     "LOGONSERVER": "\\\\RUBEN-PC",
@@ -415,7 +415,7 @@
     "npm_package_devDependencies__babel_plugin_syntax_object_rest_spread": "^7.8.3",
     "npm_package_eslintConfig_extends": "react-app",
     "npm_package_homepage": "http://.",
-    "npm_package_name": "react-mui-draft-wysiwyg-example",
+    "npm_package_name": "react-mui5-draft-wysiwyg-example",
     "npm_package_private": "true",
     "npm_package_readmeFilename": "README.md",
     "npm_package_scripts_build": "node ../node_modules/react-scripts/bin/react-scripts.js build",
@@ -426,7 +426,7 @@
     "NUMBER_OF_PROCESSORS": "12",
     "OneDrive": "C:\\Users\\Ruben\\OneDrive",
     "OS": "Windows_NT",
-    "PATH": "C:\\Users\\Ruben\\AppData\\Local\\Temp\\yarn--1598474930971-0.4470819519648712;D:\\Documents\\React Projects\\components\\react-mui-draft-wysiwyg\\example\\node_modules\\.bin;C:\\Users\\Ruben\\AppData\\Local\\Yarn\\Data\\link\\node_modules\\.bin;C:\\Program Files\\libexec\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\node-gyp-bin;D:\\Documents\\React Projects\\components\\react-mui-draft-wysiwyg\\node_modules\\.bin;C:\\Program Files (x86)\\Razer Chroma SDK\\bin;C:\\Program Files\\Razer Chroma SDK\\bin;C:\\Program Files (x86)\\Razer\\ChromaBroadcast\\bin;C:\\Program Files\\Razer\\ChromaBroadcast\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Calibre2\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Users\\Ruben\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Android;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\nodejs\\;D:\\Program Files (x86)\\yarn\\bin\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps;;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\laragon\\bin;C:\\laragon\\bin\\apache\\httpd-2.4.27-win64-VC14\\bin;C:\\laragon\\bin\\composer;C:\\laragon\\bin\\git\\bin;C:\\laragon\\bin\\git\\cmd;C:\\laragon\\bin\\git\\mingw64\\bin;C:\\laragon\\bin\\git\\usr\\bin;C:\\laragon\\bin\\laragon\\utils;C:\\laragon\\bin\\mysql\\mariadb-10.1.9\\bin;C:\\laragon\\bin\\nginx\\nginx-1.12.0;C:\\laragon\\bin\\ngrok;C:\\laragon\\bin\\notepad++;C:\\laragon\\bin\\putty;C:\\laragon\\bin\\redis\\redis-x64-3.2.100;C:\\laragon\\bin\\telnet;C:\\laragon\\bin\\yarn\\bin;C:\\laragon\\usr\\bin;C:\\Users\\Ruben\\AppData\\Local\\Yarn\\config\\global\\node_modules\\.bin;C:\\Users\\Ruben\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Ruben\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Ruben\\AppData\\Local\\Android\\sdk\\tools\\bin;C:\\Program Files\\Microsoft VS Code\\bin;D:\\Anaconda\\Scripts;D:\\Anaconda;D:\\Program files\\Heroku\\bin;C:\\Users\\Ruben\\AppData\\Local\\atom\\bin;C:\\laragon\\bin\\php\\php-7.4.4-Win32-vc15-x64;C:\\Users\\Ruben\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Ruben\\AppData\\Roaming\\npm;C:\\Users\\Ruben\\AppData\\Local\\Yarn\\bin;",
+    "PATH": "C:\\Users\\Ruben\\AppData\\Local\\Temp\\yarn--1598474930971-0.4470819519648712;D:\\Documents\\React Projects\\components\\react-mui5-draft-wysiwyg\\example\\node_modules\\.bin;C:\\Users\\Ruben\\AppData\\Local\\Yarn\\Data\\link\\node_modules\\.bin;C:\\Program Files\\libexec\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\node-gyp-bin;D:\\Documents\\React Projects\\components\\react-mui5-draft-wysiwyg\\node_modules\\.bin;C:\\Program Files (x86)\\Razer Chroma SDK\\bin;C:\\Program Files\\Razer Chroma SDK\\bin;C:\\Program Files (x86)\\Razer\\ChromaBroadcast\\bin;C:\\Program Files\\Razer\\ChromaBroadcast\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Calibre2\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Users\\Ruben\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Android;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\nodejs\\;D:\\Program Files (x86)\\yarn\\bin\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps;;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;%SYSTEMROOT%\\System32\\OpenSSH\\;C:\\laragon\\bin;C:\\laragon\\bin\\apache\\httpd-2.4.27-win64-VC14\\bin;C:\\laragon\\bin\\composer;C:\\laragon\\bin\\git\\bin;C:\\laragon\\bin\\git\\cmd;C:\\laragon\\bin\\git\\mingw64\\bin;C:\\laragon\\bin\\git\\usr\\bin;C:\\laragon\\bin\\laragon\\utils;C:\\laragon\\bin\\mysql\\mariadb-10.1.9\\bin;C:\\laragon\\bin\\nginx\\nginx-1.12.0;C:\\laragon\\bin\\ngrok;C:\\laragon\\bin\\notepad++;C:\\laragon\\bin\\putty;C:\\laragon\\bin\\redis\\redis-x64-3.2.100;C:\\laragon\\bin\\telnet;C:\\laragon\\bin\\yarn\\bin;C:\\laragon\\usr\\bin;C:\\Users\\Ruben\\AppData\\Local\\Yarn\\config\\global\\node_modules\\.bin;C:\\Users\\Ruben\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Ruben\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Ruben\\AppData\\Local\\Android\\sdk\\tools\\bin;C:\\Program Files\\Microsoft VS Code\\bin;D:\\Anaconda\\Scripts;D:\\Anaconda;D:\\Program files\\Heroku\\bin;C:\\Users\\Ruben\\AppData\\Local\\atom\\bin;C:\\laragon\\bin\\php\\php-7.4.4-Win32-vc15-x64;C:\\Users\\Ruben\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Ruben\\AppData\\Roaming\\npm;C:\\Users\\Ruben\\AppData\\Local\\Yarn\\bin;",
     "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
     "PROCESSOR_ARCHITECTURE": "AMD64",
     "PROCESSOR_IDENTIFIER": "AMD64 Family 23 Model 8 Stepping 2, AuthenticAMD",
