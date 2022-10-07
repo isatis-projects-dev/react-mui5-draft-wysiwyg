@@ -9,9 +9,10 @@ import Typography from '@mui/material/Typography';
 import CircularProgress from '@mui/material/CircularProgress';
 import SizeInputs from './inputs/SizeInputs';
 import ImageToUpload from './image/ImageToUpload';
-import { makeStyles } from '@mui/material/styles';
+import { makeStyles } from 'tss-react/mui';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles()(() => {
+  return {
     dropArea: ({ highlightDropArea }) => ({
         width: 500,
         height: 300,
@@ -32,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
         color: theme.palette.text.hint || 'rgba(0, 0, 0, 0.38)',
         cursor: 'pointer',
     }),
-}));
+}});
 
 function UploadDialog({ open, onClose, onSubmit, uploadCallback }) {
     const editor = useEditor();

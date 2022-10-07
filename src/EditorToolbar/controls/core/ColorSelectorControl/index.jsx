@@ -7,7 +7,7 @@ import FormatColorResetIcon from '@mui/icons-material/FormatColorReset';
 import CheckIcon from '@mui/icons-material/Check';
 import { isLightOrDark } from '../../../../utils/colorUtils';
 import Button from '@mui/material/Button';
-import { makeStyles } from '@mui/material/styles';
+import { makeStyles } from 'tss-react/mui';
 
 const useStyles = makeStyles({
     colorRow: {
@@ -37,7 +37,7 @@ function ColorSelectorControl({
     children,
     ...rest
 }) {
-    const classes = useStyles();
+    const { classes } = useStyles();
     const [anchorEl, setAnchorEl] = React.useState(null);
     const menuId = Math.random().toString(36).substring(8);
     const colorRows = [[]];

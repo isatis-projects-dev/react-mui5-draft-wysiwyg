@@ -5,17 +5,18 @@ import Container from '@mui/material/Container';
 import InputLabel from '@mui/material/InputLabel';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
-import { makeStyles } from '@mui/material/styles';
+import { makeStyles } from 'tss-react/mui';
 import Grid from '@mui/material/Grid';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles()(() => {
+  return {
     optionsWrapper: {
         paddingTop: theme.spacing(5),
         paddingBottom: theme.spacing(3),
     },
-}));
+}});
 
 function App() {
     const [editorState, setEditorState] = React.useState(MUIEditorState.createEmpty());
@@ -23,7 +24,7 @@ function App() {
     const [lang, setLang] = React.useState('en');
     const [toolbarPosition, setToolbarPosition] = React.useState('top');
     const [html, setHtml] = React.useState('');
-    const classes = useStyles();
+    const { classes } = useStyles();
 
     const onChange = (newState) => {
         setEditorState(newState);

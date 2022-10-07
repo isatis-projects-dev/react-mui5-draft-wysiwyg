@@ -6,7 +6,8 @@ import EditorToolbar from './EditorToolbar';
 import Paper from '@mui/material/Paper';
 import { defaultConfig } from './types/config';
 import Translator from './lang/Translator';
-import { makeStyles } from '@mui/material/styles';
+import { makeStyles } from 'tss-react/mui';
+import GlobalStyles from "@mui/material/GlobalStyles";
 import toHTML from './conversion/toHTML';
 import useEditor from './hooks/useEditor';
 import useEditorFocus from './hooks/useEditorFocus';
@@ -30,39 +31,14 @@ export const MUIEditorState = {
     },
 };
 
-const useStyles = makeStyles((theme) => ({
-    '@global': {
-        '.mui-editor-left-aligned-block': {
-            textAlign: 'left !important',
-            '& > div': {
-                textAlign: 'left !important',
-            },
-        },
-        '.mui-editor-center-aligned-block': {
-            textAlign: 'center !important',
-            '& > div': {
-                textAlign: 'center !important',
-            },
-        },
-        '.mui-editor-right-aligned-block': {
-            textAlign: 'right !important',
-            '& > div': {
-                textAlign: 'right !important',
-            },
-        },
-        '.mui-editor-justify-aligned-block': {
-            textAlign: 'justify !important',
-            '& > div': {
-                textAlign: 'justify !important',
-            },
-        },
-    },
+const useStyles = makeStyles()(() => {
+  return {
     editorWrapper: {
         marginTop: theme.spacing(2),
         marginBottom: theme.spacing(2),
         padding: theme.spacing(5),
     },
-}));
+}});
 
 /**
  * Material UI Draft.js editor
@@ -91,7 +67,7 @@ function MUIEditor({
         const translator = new Translator(translationsRef.current);
         return translator.get(id);
     }, []);
-    const classes = useStyles();
+    const { classes } = useStyles();
 
     React.useEffect(() => {
         setIsToolbarVisible(toolbarVisibleConfig);
@@ -160,6 +136,36 @@ function MUIEditor({
     );
 
     return (
+        <>
+        <GlobalStyles
+            styles={{
+                '.mui-editor-left-aligned-block': {
+                    textAlign: 'left !important',
+                    '& > div': {
+                        textAlign: 'left !important',
+                    },
+                },
+                '.mui-editor-center-aligned-block': {
+                    textAlign: 'center !important',
+                    '& > div': {
+                        textAlign: 'center !important',
+                    },
+                },
+                '.mui-editor-right-aligned-block': {
+                    textAlign: 'right !important',
+                    '& > div': {
+                        textAlign: 'right !important',
+                    },
+                },
+                '.mui-editor-justify-aligned-block': {
+                    textAlign: 'justify !important',
+                    '& > div': {
+                        textAlign: 'justify !important',
+                    },
+                },
+            }}
+        />
+        
         <EditorContext.Provider
             value={{
                 editorState,
@@ -181,6 +187,7 @@ function MUIEditor({
             {EditorWrapper}
             {bottom}
         </EditorContext.Provider>
+        </>
     );
 }
 

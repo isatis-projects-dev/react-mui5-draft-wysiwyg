@@ -29,6 +29,7 @@
     "react": "^16.0.0",
     "@mui/material": "^4.10.2",
     "@mui/icons-material": "^4.9.1",
+    "tss-react": "^4.3.4",
     "draft-js": "^0.11.6",
     "prop-types": "latest"
   },
@@ -55,6 +56,7 @@
     "@mui/material": "^5.10.8",
     "@mui/icons-material": "^5.10.6",
     "draft-js": "^0.11.6",
+    "tss-react": "^4.3.4",
     "prop-types": "latest"
   },
   "files": [

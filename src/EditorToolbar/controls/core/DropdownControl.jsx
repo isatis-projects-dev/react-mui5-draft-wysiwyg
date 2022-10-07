@@ -2,18 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
-import { makeStyles } from '@mui/material/styles';
+import { makeStyles } from 'tss-react/mui';
 import useEditor from '../../../hooks/useEditor';
 import { translateLiteralWithPrefix } from '../../../utils/translateUtils';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles()(() => {
+  return {
     selectControl: {
         margin: theme.spacing(1),
     },
-}));
+}});
 
 function DropdownControl({ value, onChange, options, minWidth = 120, ...rest }) {
-    const classes = useStyles();
+    const { classes } = useStyles();
     const editor = useEditor();
 
     return (
