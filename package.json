@@ -1,7 +1,7 @@
 {
-  "homepage": "https://github.com/bcdoriana/react-mui5-draft-wysiwyg.git",
-  "name": "react-mui5-draft-wysiwyg",
-  "version": "1.0.7",
+  "homepage": "https://github.com/ned-cms/react-mui5-draft-wysiwyg.git",
+  "name": "@ned-cms/react-mui5-draft-wysiwyg",
+  "version": "0.0.1",
   "description": "React component that allows to use a rich editor based on Material UI and Draft-js",
   "author": "Kelsier90",
   "keywords": [
@@ -17,7 +17,11 @@
     "html"
   ],
   "license": "MIT",
-  "repository": "bcdoriana/react-mui5-draft-wysiwyg",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ned-cms/react-mui5-draft-wysiwyg.git",
+    "directory": "@ned-cms/react-admin-firebase"
+  },
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.jsx",
