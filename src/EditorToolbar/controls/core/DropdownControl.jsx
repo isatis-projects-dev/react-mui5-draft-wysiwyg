@@ -23,7 +23,7 @@ function DropdownControl({ value, onChange, options, minWidth = 120, ...rest }) 
             value={value}
             onChange={(ev) => onChange(ev.target.value)}
             className={classes.selectControl}
-            style={{ minWidth }}
+            style={{ minWidth, margin: '5px' }}
             {...rest}>
             {options.map((option) => (
                 <MenuItem key={option.value || 'empty'} value={option.value}>
