@@ -9,7 +9,7 @@ import { useTheme } from '@mui/material';
 const useStyles = (theme) => {
     return {
         selectControl: {
-            margin: theme.spacing(1),
+            margin: '5px',
         },
     };
 };
