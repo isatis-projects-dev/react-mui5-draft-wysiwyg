@@ -15,8 +15,8 @@ const useStyles = (theme) => {
 };
 
 function DropdownControl({ value, onChange, options, minWidth = 120, ...rest }) {
-    const classes = useStyles();
-    const editor = useEditor(useTheme());
+    const classes = useStyles(useTheme());
+    const editor = useEditor();
 
     return (
         <Select
