@@ -5,12 +5,12 @@ import EditorFactories from './utils/EditorFactories';
 import EditorToolbar from './EditorToolbar';
 import { defaultConfig } from './types/config';
 import Translator from './lang/Translator';
-import { makeStyles } from 'tss-react/mui';
-import GlobalStyles from "@mui/material/GlobalStyles";
+import GlobalStyles from '@mui/material/GlobalStyles';
 import toHTML from './conversion/toHTML';
 import useEditor from './hooks/useEditor';
 import useEditorFocus from './hooks/useEditorFocus';
 import 'draft-js/dist/Draft.css';
+import { useTheme } from '@mui/material';
 
 export { toolbarControlTypes } from './types/editorToolbar';
 export { LANG_PREFIX } from './types/lang';
@@ -30,22 +30,17 @@ export const MUIEditorState = {
     },
 };
 
-const useStyles = makeStyles()((theme) => {
-  return {
-    editorWrapper: {
-        marginTop: theme.spacing(2),
-        marginBottom: theme.spacing(2),
-        padding: theme.spacing(5),
-    },
-}});
+const useStyles = (theme) => {
+    return {
+        editorWrapper: {
+            marginTop: theme.spacing(2),
+            marginBottom: theme.spacing(2),
+            padding: theme.spacing(5),
+        },
+    };
+};
 
-/**
- * Material UI Draft.js editor
- *
- * @version 1.0.3
- * @author [Rubén Albarracín](https://github.com/Kelsier90)
- */
-function MUIEditor({
+export default function MUIEditor({
     editorState,
     onChange,
     onFocus = null,
@@ -66,7 +61,7 @@ function MUIEditor({
         const translator = new Translator(translationsRef.current);
         return translator.get(id);
     }, []);
-    const { classes } = useStyles();
+    const { classes } = useStyles(useTheme());
 
     React.useEffect(() => {
         setIsToolbarVisible(toolbarVisibleConfig);
@@ -132,77 +127,56 @@ function MUIEditor({
 
     return (
         <React.Fragment>
-        <GlobalStyles
-            styles={{
-                '.mui-editor-left-aligned-block': {
-                    textAlign: 'left !important',
-                    '& > div': {
+            <GlobalStyles
+                styles={{
+                    '.mui-editor-left-aligned-block': {
                         textAlign: 'left !important',
+                        '& > div': {
+                            textAlign: 'left !important',
+                        },
                     },
-                },
-                '.mui-editor-center-aligned-block': {
-                    textAlign: 'center !important',
-                    '& > div': {
+                    '.mui-editor-center-aligned-block': {
                         textAlign: 'center !important',
+                        '& > div': {
+                            textAlign: 'center !important',
+                        },
                     },
-                },
-                '.mui-editor-right-aligned-block': {
-                    textAlign: 'right !important',
-                    '& > div': {
+                    '.mui-editor-right-aligned-block': {
                         textAlign: 'right !important',
+                        '& > div': {
+                            textAlign: 'right !important',
+                        },
                     },
-                },
-                '.mui-editor-justify-aligned-block': {
-                    textAlign: 'justify !important',
-                    '& > div': {
+                    '.mui-editor-justify-aligned-block': {
                         textAlign: 'justify !important',
+                        '& > div': {
+                            textAlign: 'justify !important',
+                        },
                     },
-                },
-            }}
-        />
-        
-        <EditorContext.Provider
-            value={{
-                editorState,
-                onChange,
-                ref: editorRef.current,
-                translate: translateRef.current,
-                showResizeImageDialog: (entityKey) => {
-                    setIsResizeImageDialogVisible(true);
-                    setResizeImageEntityKey(entityKey);
-                },
-                hideResizeImageDialog: () => {
-                    setIsResizeImageDialogVisible(false);
-                    setResizeImageEntityKey(null);
-                },
-                isResizeImageDialogVisible,
-                resizeImageEntityKey,
-            }}>
-            {top}
-            {EditorWrapper}
-            {bottom}
-        </EditorContext.Provider>
+                }}
+            />
+
+            <EditorContext.Provider
+                value={{
+                    editorState,
+                    onChange,
+                    ref: editorRef.current,
+                    translate: translateRef.current,
+                    showResizeImageDialog: (entityKey) => {
+                        setIsResizeImageDialogVisible(true);
+                        setResizeImageEntityKey(entityKey);
+                    },
+                    hideResizeImageDialog: () => {
+                        setIsResizeImageDialogVisible(false);
+                        setResizeImageEntityKey(null);
+                    },
+                    isResizeImageDialogVisible,
+                    resizeImageEntityKey,
+                }}>
+                {top}
+                {EditorWrapper}
+                {bottom}
+            </EditorContext.Provider>
         </React.Fragment>
     );
 }
-
-MUIEditor.displayName = 'MUIEditor';
-
-MUIEditor.propTypes = {
-    /** Immutable object that represents the entire state of the editor */
-    editorState: PropTypes.object.isRequired,
-    /** The function to be executed by the Editor when edits and selection changes occur. The new editor state is passed by parameter. */
-    onChange: PropTypes.func.isRequired,
-    /** The function to be executed by the Editor when a focus event is triggered. The new editor state is passed by parameter. */
-    onFocus: PropTypes.func,
-    /** The function to be executed by the Editor when a blur event is triggered. The new editor state is passed by parameter. */
-    onBlur: PropTypes.func,
-    /** All the editor configuration options */
-    config: PropTypes.object,
-};
-
-MUIEditor.defaultProps = {
-    config: defaultConfig,
-};
-
-export default MUIEditor;

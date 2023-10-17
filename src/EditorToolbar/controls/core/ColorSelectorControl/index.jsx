@@ -7,9 +7,8 @@ import FormatColorResetIcon from '@mui/icons-material/FormatColorReset';
 import CheckIcon from '@mui/icons-material/Check';
 import { isLightOrDark } from '../../../../utils/colorUtils';
 import Button from '@mui/material/Button';
-import { makeStyles } from 'tss-react/mui';
 
-const useStyles = makeStyles({
+const useStyles = () => ({
     colorRow: {
         display: 'flex',
         alignContent: 'center',

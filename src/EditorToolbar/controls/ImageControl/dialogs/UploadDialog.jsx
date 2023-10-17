@@ -9,31 +9,32 @@ import Typography from '@mui/material/Typography';
 import CircularProgress from '@mui/material/CircularProgress';
 import SizeInputs from './inputs/SizeInputs';
 import ImageToUpload from './image/ImageToUpload';
-import { makeStyles } from 'tss-react/mui';
+import { useTheme } from '@mui/material';
 
-const useStyles = makeStyles()((theme) => {
-  return {
-    dropArea: ({ highlightDropArea }) => ({
-        width: 500,
-        height: 300,
-        boxSizing: 'border-box',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: theme.spacing(2),
-        marginTop: theme.spacing(1),
-        marginBottom: theme.spacing(2),
-        borderRadius: theme.shape.borderRadius || 4,
-        backgroundColor: highlightDropArea
-            ? theme.palette.grey[400] || '#bdbdbd'
-            : theme.palette.grey[200] || '#eeeeee',
-        border: highlightDropArea
-            ? `solid 3px ${theme.palette.grey[600] || '#757575'}`
-            : `dashed 3px ${theme.palette.grey[400] || '#bdbdbd'}`,
-        color: theme.palette.text.hint || 'rgba(0, 0, 0, 0.38)',
-        cursor: 'pointer',
-    }),
-}});
+const useStyles = (theme, highlightDropArea) => {
+    return {
+        dropArea: {
+            width: 500,
+            height: 300,
+            boxSizing: 'border-box',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: theme.spacing(2),
+            marginTop: theme.spacing(1),
+            marginBottom: theme.spacing(2),
+            borderRadius: theme.shape.borderRadius || 4,
+            backgroundColor: highlightDropArea
+                ? theme.palette.grey[400] || '#bdbdbd'
+                : theme.palette.grey[200] || '#eeeeee',
+            border: highlightDropArea
+                ? `solid 3px ${theme.palette.grey[600] || '#757575'}`
+                : `dashed 3px ${theme.palette.grey[400] || '#bdbdbd'}`,
+            color: theme.palette.text.hint || 'rgba(0, 0, 0, 0.38)',
+            cursor: 'pointer',
+        },
+    };
+};
 
 function UploadDialog({ open, onClose, onSubmit, uploadCallback }) {
     const editor = useEditor();
@@ -48,7 +49,7 @@ function UploadDialog({ open, onClose, onSubmit, uploadCallback }) {
     const [errorMessage, setErrorMessage] = React.useState(null);
     const [highlightDropArea, setHighlightDropArea] = React.useState(false);
     const inputFileRef = React.createRef();
-    const classes = useStyles({ highlightDropArea });
+    const classes = useStyles(useTheme(), highlightDropArea);
 
     const handleSubmit = (ev) => {
         ev.preventDefault();

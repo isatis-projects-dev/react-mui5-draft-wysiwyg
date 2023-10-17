@@ -13,8 +13,9 @@ import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import PhotoSizeSelectLargeIcon from '@mui/icons-material/PhotoSizeSelectLarge';
 import DeleteIcon from '@mui/icons-material/Delete';
-import { makeStyles } from 'tss-react/mui';
 import Typography from '@mui/material/Typography';
+import { useTheme } from "@mui/material";
+
 
 const EditorMedia = ({ contentState, block }) => {
     const entity = contentState.getEntity(block.getEntityAt(0));
@@ -41,19 +42,20 @@ EditorMedia.propTypes = {
     block: PropTypes.object.isRequired,
 };
 
-const useStyles = makeStyles()((theme) => {
+const useStyles = (theme) => {
   return {
     imgInfo: {
         padding: theme.spacing(0.6),
     },
-}});
+    }
+};
 
 const EditorImage = ({ src, width, height, contentState, block }) => {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [infoAnchorEl, setInfoAnchorEl] = React.useState(null);
     const editor = useEditor();
     const editorFocus = useEditorFocus();
-    const { classes } = useStyles();
+    const { classes } = useStyles(useTheme());
 
     const showOptions = (ev) => {
         setAnchorEl(ev.currentTarget);

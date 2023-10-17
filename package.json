@@ -1,84 +1,78 @@
 {
-  "homepage": "https://github.com/ned-cms/react-mui5-draft-wysiwyg.git",
-  "name": "@ned-cms/react-mui5-draft-wysiwyg",
-  "version": "0.0.1",
-  "description": "React component that allows to use a rich editor based on Material UI and Draft-js",
-  "author": "Kelsier90",
-  "keywords": [
-    "react",
-    "reactjs",
-    "mui",
-    "material",
-    "wysiwyg",
-    "rich",
-    "text",
-    "editor",
-    "draft",
-    "html"
-  ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ned-cms/react-mui5-draft-wysiwyg.git",
-    "directory": "@ned-cms/react-admin-firebase"
-  },
-  "main": "dist/index.js",
-  "module": "dist/index.modern.js",
-  "source": "src/index.jsx",
-  "engines": {
-    "node": ">=10"
-  },
-  "scripts": {
-    "build": "microbundle-crl --no-compress --format modern,cjs",
-    "start": "microbundle-crl watch --no-compress --format modern,cjs",
-    "prepare": "run-s build",
-    "test": "run-s test:unit test:lint test:build",
-    "test:build": "run-s build",
-    "test:lint": "eslint .",
-    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
-    "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build"
-  },
-  "peerDependencies": {
-    "@mui/icons-material": "^4.9.1",
-    "@mui/material": "^4.10.2",
-    "draft-js": "^0.11.6",
-    "prop-types": "latest",
-    "react": "^16.0.0",
-    "tss-react": "^4.3.4"
-  },
-  "devDependencies": {
-    "@mui/icons-material": "^5.10.6",
-    "@mui/material": "^5.13.6",
-    "babel-eslint": "^10.0.3",
-    "cross-env": "^7.0.2",
-    "draft-js": "^0.11.6",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-config-standard-react": "^9.2.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.17.0",
-    "eslint-plugin-standard": "^4.0.1",
-    "gh-pages": "^2.2.0",
-    "microbundle-crl": "^0.13.10",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^2.0.4",
-    "prop-types": "latest",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1",
-    "tss-react": "^4.3.4"
-  },
-  "files": [
-    "dist"
-  ],
-  "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0"
-  }
+    "homepage": "https://github.com/isatis-projects-dev/react-mui5-draft-wysiwyg",
+    "name": "react-mui5-draft-wysiwyg",
+    "version": "1.0.0",
+    "description": "React component that allows to use a rich editor based on Material UI and Draft-js",
+    "author": "Isatis Projects",
+    "keywords": [
+        "react",
+        "reactjs",
+        "mui",
+        "material",
+        "wysiwyg",
+        "rich",
+        "text",
+        "editor",
+        "draft",
+        "html"
+    ],
+    "license": "MIT",
+    "main": "dist/index.js",
+    "module": "dist/index.modern.js",
+    "source": "src/index.jsx",
+    "engines": {
+        "node": ">=10"
+    },
+    "scripts": {
+        "build": "microbundle-crl --no-compress --format modern,cjs",
+        "start": "microbundle-crl watch --no-compress --format modern,cjs",
+        "prepare": "run-s build",
+        "test": "run-s test:unit test:lint test:build",
+        "test:build": "run-s build",
+        "test:lint": "eslint .",
+        "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
+        "test:watch": "react-scripts test --env=jsdom",
+        "predeploy": "cd example && yarn install && yarn run build",
+        "deploy": "gh-pages -d example/build"
+    },
+    "peerDependencies": {
+        "@mui/icons-material": "^5.14.8",
+        "@mui/material": "^5.14.8",
+        "draft-js": "^0.11.7",
+        "prop-types": "latest",
+        "react": "^18.2.0"
+    },
+    "devDependencies": {
+        "@mui/icons-material": "^5.14.8",
+        "@mui/material": "^5.14.8",
+        "babel-eslint": "^10.0.3",
+        "cross-env": "^7.0.2",
+        "draft-js": "^0.11.7",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.7.0",
+        "eslint-config-standard": "^14.1.0",
+        "eslint-config-standard-react": "^9.2.0",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-node": "^11.0.0",
+        "eslint-plugin-prettier": "^3.1.1",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-react": "^7.17.0",
+        "eslint-plugin-standard": "^4.0.1",
+        "gh-pages": "^2.2.0",
+        "microbundle-crl": "^0.13.10",
+        "npm-run-all": "^4.1.5",
+        "prettier": "^2.0.4",
+        "prop-types": "latest",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-scripts": "^5.0.1",
+        "tss-react": "^4.3.4"
+    },
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "@emotion/react": "^11.11.1",
+        "@emotion/styled": "^11.11.0"
+    }
 }

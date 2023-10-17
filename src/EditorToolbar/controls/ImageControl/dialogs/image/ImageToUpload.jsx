@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles } from 'tss-react/mui';
+import { useTheme } from "@mui/material";
 
-const useStyles = makeStyles()((theme) => {
+const useStyles = (theme) => {
   return {
     imgWrapper: {
         maxWidth: '100%',
@@ -11,10 +11,11 @@ const useStyles = makeStyles()((theme) => {
         marginTop: theme.spacing(2),
         marginBottom: theme.spacing(2),
     },
-}});
+};
+};
 
 function ImageToUpload({ width, height, src }) {
-    const { classes } = useStyles();
+    const { classes } = useStyles(useTheme());
 
     return (
         <div className={classes.imgWrapper}>

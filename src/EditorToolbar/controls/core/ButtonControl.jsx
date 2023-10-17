@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import Badge from '@mui/material/Badge';
-import { makeStyles } from 'tss-react/mui';
 
-const useStyles = makeStyles({
-    badge: (props) => ({
+
+const useStyles = (props) => ({
+    badge: {
         background: props.badgeColor,
-    }),
+    },
 });
 
 function ButtonControl({
