@@ -36,7 +36,7 @@ function ColorSelectorControl({
     children,
     ...rest
 }) {
-    const { classes } = useStyles();
+    const classes = useStyles();
     const [anchorEl, setAnchorEl] = React.useState(null);
     const menuId = Math.random().toString(36).substring(8);
     const colorRows = [[]];

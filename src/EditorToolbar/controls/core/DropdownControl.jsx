@@ -4,17 +4,18 @@ import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import useEditor from '../../../hooks/useEditor';
 import { translateLiteralWithPrefix } from '../../../utils/translateUtils';
-import { useTheme } from "@mui/material";
+import { useTheme } from '@mui/material';
 
 const useStyles = (theme) => {
-  return {
-    selectControl: {
-        margin: theme.spacing(1),
-    },
-}};
+    return {
+        selectControl: {
+            margin: theme.spacing(1),
+        },
+    };
+};
 
 function DropdownControl({ value, onChange, options, minWidth = 120, ...rest }) {
-    const { classes } = useStyles();
+    const classes = useStyles();
     const editor = useEditor(useTheme());
 
     return (
