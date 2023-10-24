@@ -1,7 +1,7 @@
 {
     "homepage": "https://github.com/isatis-projects-dev/react-mui5-draft-wysiwyg",
     "name": "react-mui5-draft-wysiwyg",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "React component that allows to use a rich editor based on Material UI and Draft-js",
     "author": "Isatis Projects",
     "keywords": [
