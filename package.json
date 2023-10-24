@@ -1,44 +1,30 @@
 {
-    "homepage": "https://github.com/isatis-projects-dev/react-mui5-draft-wysiwyg",
     "name": "react-mui5-draft-wysiwyg",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "description": "React component that allows to use a rich editor based on Material UI and Draft-js",
     "author": "Isatis Projects",
-    "keywords": [
-        "react",
-        "reactjs",
-        "mui",
-        "material",
-        "wysiwyg",
-        "rich",
-        "text",
-        "editor",
-        "draft",
-        "html"
-    ],
     "license": "MIT",
-    "main": "dist/index.js",
-    "module": "dist/index.modern.js",
-    "source": "src/index.jsx",
+    "type": "module",
+    "module": "./dist/react-mui5-draft-wysiwyg",
+    "exports": {
+        ".": {
+            "import": "./dist/react-mui5-draft-wysiwyg"
+        }
+    },
+    "files": [
+        "dist"
+    ],
     "engines": {
         "node": ">=10"
     },
     "scripts": {
-        "build": "microbundle-crl --no-compress --format modern,cjs",
-        "start": "microbundle-crl watch --no-compress --format modern,cjs",
-        "test": "run-s test:unit test:lint test:build",
-        "test:build": "run-s build",
-        "test:lint": "eslint .",
-        "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
-        "test:watch": "react-scripts test --env=jsdom",
-        "predeploy": "cd example && yarn install && yarn run build",
-        "deploy": "gh-pages -d example/build"
+        "build": "vite build"
     },
     "peerDependencies": {
-        "@mui/icons-material": "^5.14.8",
-        "@mui/material": "^5.14.8",
         "@emotion/react": "^11.11.1",
         "@emotion/styled": "^11.11.0",
+        "@mui/icons-material": "^5.14.8",
+        "@mui/material": "^5.14.8",
         "draft-js": "^0.11.7",
         "react": "^18.2.0"
     },
@@ -66,11 +52,10 @@
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-scripts": "^5.0.1",
-        "tss-react": "^4.3.4"
+        "tss-react": "^4.3.4",
+        "vite": "^4.5.0",
+        "vite-plugin-dts": "^3.6.1"
     },
-    "files": [
-        "dist"
-    ],
     "dependencies": {
         "prop-types": "latest"
     }

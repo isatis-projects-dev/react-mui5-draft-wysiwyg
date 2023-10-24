@@ -59,9 +59,9 @@ const EditorLink = ({ contentState, entityKey, blockKey, start, end, children })
                 rel="noopener noreferrer"
                 target="_blank"
                 aria-label={url}
-                onClick={showOptions}>
-                {children}
-            </Link>
+                onClick={showOptions}
+            />
+
             <Popover
                 open={Boolean(anchorEl)}
                 onClose={hideOptions}
